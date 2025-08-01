@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* High contrast light theme - proper 4.5:1 ratio */
+    --background: 0 0% 98%;
+    --foreground: 220 13% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 220 13% 18%;
+
+    --muted: 220 13% 94%;
+    --muted-foreground: 220 13% 46%;
+
+    --accent: 262 83% 95%;
+    --accent-foreground: 262 83% 25%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 87%;
+    --input: 220 13% 87%;
+    --ring: 262 83% 58%;
+
+    --radius: 1rem;
+    
+    /* High contrast mobile-first design tokens */
+    --editor-bg: 0 0% 100%;
+    --editor-accent: 262 83% 58%;
+    --voice-active: 142 76% 36%;
+    --voice-inactive: 220 13% 46%;
+    --surface-elevated: 0 0% 99%;
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(217 91% 60%));
+    --gradient-voice: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
+    --gradient-surface: linear-gradient(135deg, hsl(262 83% 96%), hsl(217 91% 96%));
+    --shadow-soft: 0 4px 20px -4px hsl(262 83% 58% / 0.15);
+    --shadow-voice: 0 0 20px hsl(142 76% 36% / 0.3);
+    --shadow-elevated: 0 8px 32px -8px hsl(220 13% 25% / 0.12);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar tokens */
+    --sidebar-background: 0 0% 99%;
+    --sidebar-foreground: 220 13% 18%;
+    --sidebar-primary: 220 13% 9%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 220 13% 95%;
+    --sidebar-accent-foreground: 220 13% 9%;
+    --sidebar-border: 220 13% 87%;
+    --sidebar-ring: 262 83% 58%;
+  }
+
+  .dark {
+    /* High contrast dark theme - proper 4.5:1 ratio */
+    --background: 220 27% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 27% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 27% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 262 83% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 27% 16%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 220 27% 14%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 220 27% 18%;
+    --accent-foreground: 262 83% 80%;
+
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 27% 22%;
+    --input: 220 27% 15%;
+    --ring: 262 83% 65%;
+    
+    /* High contrast dark mobile-optimized tokens */
+    --editor-bg: 220 27% 6%;
+    --editor-accent: 262 83% 65%;
+    --voice-active: 142 76% 55%;
+    --voice-inactive: 220 27% 60%;
+    --surface-elevated: 220 27% 10%;
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 65%), hsl(217 91% 70%));
+    --gradient-voice: linear-gradient(135deg, hsl(142 76% 55%), hsl(142 76% 65%));
+    --gradient-surface: linear-gradient(135deg, hsl(220 27% 12%), hsl(217 25% 16%));
+    --shadow-soft: 0 4px 20px -4px hsl(262 83% 65% / 0.3);
+    --shadow-voice: 0 0 20px hsl(142 76% 55% / 0.5);
+    --shadow-elevated: 0 8px 32px -8px hsl(220 27% 3% / 0.5);
+
+    /* Dark sidebar tokens */
+    --sidebar-background: 220 27% 9%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 0% 90%;
+    --sidebar-primary-foreground: 220 27% 9%;
+    --sidebar-accent: 220 27% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 220 27% 22%;
+    --sidebar-ring: 262 83% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
