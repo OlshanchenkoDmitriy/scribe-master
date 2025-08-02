@@ -38,14 +38,14 @@ export function Navigation() {
   const location = useLocation();
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col">
       {/* Header */}
       <header className="bg-surface-elevated border-b border-border/50 px-4 py-3 flex-shrink-0 shadow-soft">
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 bg-gradient-primary rounded-xl flex items-center justify-center shadow-soft">
             <Edit3 className="w-5 h-5 text-white" />
           </div>
-          <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className=\"text-lg sm:text-xl font-bold bg-gradient-primary bg-clip-text text-transparent\">
             LinguaScribe
           </h1>
         </div>

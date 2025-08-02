@@ -161,7 +161,7 @@ export function VoiceRecorder({ onTranscript, className }: VoiceRecorderProps) {
       </Button>
       
       {isListening && (
-        <div className="flex items-center space-x-2 animate-fade-in">
+        <div className=\"flex items-center space-x-2 animate-fade-in ml-2 sm:ml-3\">
           <div className="flex space-x-1">
             <div className="w-2 h-2 bg-voice-active rounded-full animate-pulse" />
             <div className="w-2 h-2 bg-voice-active rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
